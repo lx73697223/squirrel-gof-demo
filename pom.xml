@@ -8,10 +8,18 @@
         <groupId>com.pipi</groupId>
         <artifactId>squirrel-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath />
+        <relativePath/>
     </parent>
 
     <artifactId>squirrel-gof-demo</artifactId>
     <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- squirrel common -->
+        <dependency>
+            <groupId>com.pipi</groupId>
+            <artifactId>squirrel-common-utils</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
