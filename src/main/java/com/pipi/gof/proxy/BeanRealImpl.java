@@ -11,7 +11,7 @@ public class BeanRealImpl implements IBean {
 
     @Override
     public void doing() {
-        System.out.println("==doing " + value);
+        System.out.println("==execute " + value);
     }
 
     public String getValue() {

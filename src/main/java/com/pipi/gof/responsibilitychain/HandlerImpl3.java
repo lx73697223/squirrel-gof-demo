@@ -8,7 +8,7 @@ public class HandlerImpl3 extends AbstractHandler {
 
     @Override
     protected void doing(String value) {
-        System.out.println(String.format("handler2, type %s, doing %s", type, value));
+        System.out.println(String.format("handler2, type %s, execute %s", type, value));
     }
 
 }
