@@ -1,7 +1,5 @@
 package com.pipi.gof.interpreter;
 
-import org.apache.commons.lang3.ObjectUtils;
-
 public class OrExpression implements Expression {
 
     private Expression expr1;
