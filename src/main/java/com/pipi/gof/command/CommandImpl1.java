@@ -1,16 +1,17 @@
 package com.pipi.gof.command;
 
-public class CommandImpl1 implements ICommand {
+/**
+ 定义一个接收者对象与动作之间的请求绑定 */
+public class CommandImpl1 extends AbstractCommand {
 
-    private Request request;
-
-    public CommandImpl1(Request request) {
-        this.request = request;
+    public CommandImpl1(Receiver receiver) {
+        super(receiver);
     }
 
+    @Override
     public void execute() {
         System.out.println("==execute 1==");
-        request.do1();
+        receiver.do1();
     }
 
 }

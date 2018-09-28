@@ -12,8 +12,12 @@ public class BridgeServiceImpl extends AbstractBridgeService {
         this.value = value;
     }
 
-    @Override
     public void doA() {
+        doA(name, value);
+    }
+
+    @Override
+    public void doA(String name, String value) {
         iServiceA.doA(name, value);
     }
 

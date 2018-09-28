@@ -1,16 +1,15 @@
 package com.pipi.gof.command;
 
-public class CommandImpl2 implements ICommand {
+public class CommandImpl2 extends AbstractCommand {
 
-    private Request request;
-
-    public CommandImpl2(Request request) {
-        this.request = request;
+    public CommandImpl2(Receiver receiver) {
+        super(receiver);
     }
 
+    @Override
     public void execute() {
         System.out.println("==execute 2==");
-        request.do2();
+        receiver.do1();
     }
 
 }
