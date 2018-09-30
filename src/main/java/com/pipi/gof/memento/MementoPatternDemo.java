@@ -29,9 +29,9 @@ public class MementoPatternDemo {
         System.out.println("undo State: " + originator.getState());
 
         /*
+        Current State: State #4
         First saved State: State #2
         Second saved State: State #3
-        Current State: State #4
         undo State: State #3
         */
     }

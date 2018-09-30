@@ -1,29 +1,39 @@
 package com.pipi.gof.facade;
 
+/**
+ 知道哪些子系统类负责处理请求
+ 将客户的请求代理给相应的子系统对象
+ */
 public class BeanFacade {
 
-    private IBean beanImpl1;
+    private Bean1 bean1;
 
-    private IBean beanImpl2;
+    private Bean2 bean2;
 
-    private IBean beanImpl3;
+    private Bean3 bean3;
 
     public BeanFacade() {
-        this.beanImpl1 = new BeanImpl1();
-        this.beanImpl2 = new BeanImpl2();
-        this.beanImpl3 = new BeanImpl3();
+        this.bean1 = new Bean1();
+        this.bean2 = new Bean2();
+        this.bean3 = new Bean3();
     }
 
-    public void do1() {
-        beanImpl1.doing();
+    public void doA() {
+        bean1.do1();
+        bean2.do2();
+        bean3.do3();
     }
 
-    public void do2() {
-        beanImpl2.doing();
+    public void doB() {
+        bean3.do3();
+        bean2.do2();
+        bean1.do1();
     }
 
-    public void do3() {
-        beanImpl3.doing();
+    public void doC() {
+        bean2.do2();
+        bean1.do1();
+        bean3.do3();
     }
 
 }

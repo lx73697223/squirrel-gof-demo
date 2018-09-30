@@ -6,7 +6,7 @@ import org.springframework.beans.factory.BeanFactoryAware;
 import org.springframework.stereotype.Component;
 
 /**
- 简单工厂，利用类名反射获取对象
+ 利用类名反射获取对象
  */
 @Component
 public class SimpleReflectionFactory implements BeanFactoryAware {

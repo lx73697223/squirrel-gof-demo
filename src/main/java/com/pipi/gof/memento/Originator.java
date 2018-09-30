@@ -1,5 +1,9 @@
 package com.pipi.gof.memento;
 
+/**
+ 创建一个备忘录，记录当前时刻的内部状态。
+ 使用备忘录恢复内部状态。
+ */
 public class Originator {
 
     private String state;

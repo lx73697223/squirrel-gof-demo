@@ -1,7 +1,7 @@
 package com.pipi.gof.adapter.objectadapter;
 
 /**
- 需要适配的类接口
+ 需要适配的类
  */
 public class Adaptee {
 

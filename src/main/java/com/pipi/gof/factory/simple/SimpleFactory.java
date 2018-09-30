@@ -1,7 +1,7 @@
 package com.pipi.gof.factory.simple;
 
 /**
- 简单工厂
+ 简单工厂类
  */
 public class SimpleFactory {
 
