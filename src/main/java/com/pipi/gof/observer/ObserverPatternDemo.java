@@ -9,6 +9,9 @@ public class ObserverPatternDemo {
         observableA.addObserver(new ObserverImpl2());
 
         observableA.setState("A");
+
+        observableA.addObserver(new ObserverImpl3());
+        observableA.setState("B");
     }
 
 }

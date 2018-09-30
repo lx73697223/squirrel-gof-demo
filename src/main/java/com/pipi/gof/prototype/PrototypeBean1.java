@@ -1,5 +1,8 @@
 package com.pipi.gof.prototype;
 
+/**
+ 具体原型类
+ */
 public class PrototypeBean1 extends AbstractPrototypeBean {
 
     public PrototypeBean1() {

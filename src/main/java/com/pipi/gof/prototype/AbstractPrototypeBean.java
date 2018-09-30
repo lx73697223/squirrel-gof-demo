@@ -1,5 +1,8 @@
 package com.pipi.gof.prototype;
 
+/**
+ 原型类，声明一个Clone自身的接口
+ */
 public abstract class AbstractPrototypeBean implements Cloneable {
 
     private String id;
