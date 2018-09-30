@@ -2,6 +2,9 @@ package com.pipi.gof.observer;
 
 import java.util.concurrent.CopyOnWriteArrayList;
 
+/**
+ 被观察者
+ */
 public class Observable {
 
     private boolean changed = false;
