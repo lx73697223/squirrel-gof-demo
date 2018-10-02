@@ -2,7 +2,6 @@ package com.pipi.gof.state;
 
 import com.google.common.collect.Range;
 import com.pi.common.utils.exceptions.BadInputException;
-import com.pi.common.utils.i18n.ValidationCode;
 
 public class Work {
 

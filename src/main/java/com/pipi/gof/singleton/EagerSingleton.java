@@ -4,11 +4,12 @@ public class EagerSingleton {
 
     private final static EagerSingleton INSTANCE = new EagerSingleton();
 
-    private EagerSingleton(){
+    private EagerSingleton() {
         System.out.println("init.");
     }
 
-    public static EagerSingleton getInstance(){
+    public static EagerSingleton getInstance() {
+        System.out.println("...");
         return INSTANCE;
     }
 

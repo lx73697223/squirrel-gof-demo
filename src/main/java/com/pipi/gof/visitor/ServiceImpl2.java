@@ -4,9 +4,13 @@ public class ServiceImpl2 implements IService {
 
     private String arg2;
 
+    public ServiceImpl2(String arg2) {
+        this.arg2 = arg2;
+    }
+
     @Override
-    public void accept(ServiceVisitor serviceVisitor) {
-        serviceVisitor.visit(this);
+    public void accept(Visitor visitor) {
+        visitor.visit2(this);
     }
 
     public String getArg2() {
