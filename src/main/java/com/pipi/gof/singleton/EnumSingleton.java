@@ -1,15 +1,31 @@
 package com.pipi.gof.singleton;
 
-public enum EnumSingleton {
+public class EnumSingleton {
 
-    INSTANCE;
+    //私有化构造函数
+    private EnumSingleton(){ }
+ 
+    //定义一个静态枚举类
+    static enum SingletonEnum{
 
-    EnumSingleton(){
-        System.out.println("init.");
+        INSTANCE;
+
+        private EnumSingleton instance;
+        
+        //私有化枚举的构造函数
+        private SingletonEnum(){
+            instance = new EnumSingleton();
+        }
+        
+        public EnumSingleton getInstnce(){
+            return instance;
+        }
+
     }
-
+ 
+    //对外暴露一个获取对象的静态方法
     public static EnumSingleton getInstance(){
-        return INSTANCE;
+        return SingletonEnum.INSTANCE.getInstnce();
     }
 
 }
